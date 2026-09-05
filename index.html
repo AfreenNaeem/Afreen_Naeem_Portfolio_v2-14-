@@ -131,6 +131,9 @@
     @media (max-width: 767.98px) {
       .ftco-section { padding: 3.5em 0; }
     }
+    .project-list { list-style: none; padding-left: 0; margin-top: 10px; text-align: left; }
+    .project-list li { position: relative; padding-left: 18px; margin-bottom: 6px; font-size: 14px; line-height: 1.5; opacity: 0.85; }
+    .project-list li::before { content: "▸"; position: absolute; left: 0; color: #ffbd39; }
     @media (max-width: 480px) {
       .welcome-heading h2 { font-size: 1.3rem; }
       .about-info p { font-size: 14px; }
@@ -210,7 +213,8 @@
 			            <h2>A Software Developer</h2>
 						<!-- <br> -->
 			            <p><a href="https://github.com/AfreenNaeem" class="btn btn-primary py-3 px-4">GitHub</a> 
-							<a href="https://www.linkedin.com/in/afreennaeem" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a></p>
+							<a href="https://www.linkedin.com/in/afreennaeem" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a>
+							<a href="resume/Afreen_Naeem_Resume.pdf" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">Download Resume</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -314,7 +318,12 @@
               <div class="text mt-3 float-right d-block">
 
                 <h3 class="heading"><a href="https://github.com/AfreenNaeem">E-Commerce Backend System</a></h3>
-                <p>Designed RESTful APIs for e-commerce modules (Product, Category, Cart, Order, User) with full CRUD operations, JWT authentication, and role-based access control using Django REST Framework and MySQL.</p>
+                <ul class="project-list">
+                  <li>Designed RESTful APIs for Product, Category, Cart, Order and User modules with full CRUD operations</li>
+                  <li>Implemented JWT authentication and role-based access control (RBAC)</li>
+                  <li>Integrated MySQL using Django REST Framework and django-filter</li>
+                  <li>Tested and validated all endpoints using Postman</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -325,7 +334,12 @@
               <div class="text mt-3 float-right d-block">
 
                 <h3 class="heading"><a href="https://github.com/AfreenNaeem">Image Upload Management System</a></h3>
-                <p>Built REST APIs for image upload, download, and retrieval using Java, Spring Boot, and MySQL, with a layered Controller-Service-Repository architecture.</p>
+                <ul class="project-list">
+                  <li>Built REST APIs for image upload, download and retrieval using Spring Web and MultipartFile</li>
+                  <li>Applied a layered Controller-Service-Repository architecture</li>
+                  <li>Stored image data in both MySQL and the local file system</li>
+                  <li>Handled exceptions and used Maven for build automation</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -336,7 +350,12 @@
               <div class="text mt-3 float-right d-block">
 
                 <h3 class="heading">Hospital Management System (Live)</h3>
-                <p>Working as a Software Developer on a live, production Hospital Management System used at a healthcare facility &mdash; developing REST APIs for OPD/IPD, patient assessment, and prescription workflows using Python, Django, and MySQL.</p>
+                <ul class="project-list">
+                  <li>Working as a Software Developer on a live, production system at a healthcare facility</li>
+                  <li>Developed REST APIs for OPD/IPD, patient assessment, and prescription workflows</li>
+                  <li>Designed MySQL database models and serializers for structured data handling</li>
+                  <li>Built using Python, Django, and Django REST Framework</li>
+                </ul>
               </div>
             </div>
           </div>
